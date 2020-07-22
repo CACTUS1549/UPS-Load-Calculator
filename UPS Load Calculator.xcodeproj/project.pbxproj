@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		679C51AD24C8032B0092CBE8 /* UPS Load Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UPS Load Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		679C51AD24C8032B0092CBE8 /* Load on UPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Load on UPS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		679C51B024C8032B0092CBE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679C51B224C8032B0092CBE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		679C51B424C8032B0092CBE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		679C51AE24C8032B0092CBE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				679C51AD24C8032B0092CBE8 /* UPS Load Calculator.app */,
+				679C51AD24C8032B0092CBE8 /* Load on UPS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +56,55 @@
 		679C51AF24C8032B0092CBE8 /* UPS Load Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				679C51B024C8032B0092CBE8 /* AppDelegate.swift */,
-				679C51B224C8032B0092CBE8 /* SceneDelegate.swift */,
-				679C51B424C8032B0092CBE8 /* ViewController.swift */,
 				679C51B624C8032B0092CBE8 /* Main.storyboard */,
-				679C51B924C8032D0092CBE8 /* Assets.xcassets */,
 				679C51BB24C8032D0092CBE8 /* LaunchScreen.storyboard */,
+				679C51C824C805AB0092CBE8 /* Storyboard */,
+				679C51C724C805A40092CBE8 /* Model */,
+				679C51C624C8059E0092CBE8 /* View */,
+				679C51C524C805940092CBE8 /* Controller */,
+				679C51C424C805850092CBE8 /* Delegate */,
+				679C51B924C8032D0092CBE8 /* Assets.xcassets */,
 				679C51BE24C8032D0092CBE8 /* Info.plist */,
 			);
 			path = "UPS Load Calculator";
+			sourceTree = "<group>";
+		};
+		679C51C424C805850092CBE8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				679C51B024C8032B0092CBE8 /* AppDelegate.swift */,
+				679C51B224C8032B0092CBE8 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		679C51C524C805940092CBE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				679C51B424C8032B0092CBE8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		679C51C624C8059E0092CBE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		679C51C724C805A40092CBE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		679C51C824C805AB0092CBE8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +124,7 @@
 			);
 			name = "UPS Load Calculator";
 			productName = "UPS Load Calculator";
-			productReference = 679C51AD24C8032B0092CBE8 /* UPS Load Calculator.app */;
+			productReference = 679C51AD24C8032B0092CBE8 /* Load on UPS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -287,12 +327,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D226XP8KN;
 				INFOPLIST_FILE = "UPS Load Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "deepakreddyj.UPS-Load-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Load on UPS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,12 +346,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D226XP8KN;
 				INFOPLIST_FILE = "UPS Load Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "deepakreddyj.UPS-Load-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Load on UPS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
