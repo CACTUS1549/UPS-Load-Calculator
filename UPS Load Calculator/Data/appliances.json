@@ -1,32 +1,52 @@
 [
     {
            "appliance_category"    :   "Fans and Cooler",
-           "appliance_name"        :   ["Ceiling Fan", "Table Fan", "Room Cooler"],
+           "appliance_name"        :    ["Ceiling Fan", "Table Fan", "Room Cooler"],
            "appliance_wattage"     :    [75, 50, 250]
     },
     
     {
            "appliance_category"    :   "Laptops and Computers",
-           "appliance_name"        :   ["Laptop", "Desktop Computer", "Laser Printer (Small)"],
-           "appliance_wattage"     :    [100, 200, 200]
+           "appliance_name"        :    ["Laptop", "Desktop Computer"],
+           "appliance_wattage"     :    [100, 200]
     },
     
     {
            "appliance_category"    :   "Lights",
-           "appliance_name"        :   ["Tubelight Small", "Tubelight Big", "CFL Light", "CFL Heavy",
-                                        "LED Bulb Big", "LED Bulb Small", "Light Bulb (Incandescent)",
-                                        "Light Bulb (Incandescent)", "Light Bulb (Incandescent)"
+           "appliance_name"        :    ["Tubelight", "Tubelight", "CFL Light", "CFL Heavy",
+                                        "LED Bulb", "LED Bulb", "Light Bulb(Incandescent)",
+                                        "Light Bulb(Incandescent)", "Light Bulb(Incandescent)"
                                         ],
-           "appliance_wattage"     :    [20, 40, 30, 50, 9, 5, 40, 60, 100]
+           "appliance_wattage"     :    [20, 40, 15, 30, 5, 9, 40, 60, 100]
     },
     
     
     {
            "appliance_category"    :   "Home Appliances",
-           "appliance_name"        :   ["Juicer Mixer Grinder", "Toaster", "Refrigerator(Upto 200L)",                                   "Refrigerator(Upto 500L)", "Microwave Oven", "Vacuum Cleaner",                                  "Washing Machine", "Geyser/Water Heater", "Room Heater"
+           "appliance_name"        :    ["Juicer Mixer Grinder", "Toaster", "Refrigerator(Upto 200L)",                                                              "Refrigerator(Upto 500L)", "Microwave Oven", "Vacuum Cleaner",                                                             "Washing Machine", "Geyser/Water Heater", "Room Heater"
                                         ],
            "appliance_wattage"     :    [800, 800, 300, 500, 1400, 1400, 1000, 2200, 2200]
+    },
+    
+    {
+           "appliance_category"    :   "TV and other Entertainment",
+           "appliance_name"        :    ["Television LED(upto 40inch)", "Television CRT(upto 21inch)", "Television Plasma",                                         "SetTop Box(DTH)", "Music System", "Gaming Console"
+                                        ],
+           "appliance_wattage"     :    [60, 100, 250, 50, 300, 200]
+    },
+    
+    {
+           "appliance_category"    :   "AirConditioners",
+           "appliance_name"        :    ["AC - 1Ton, 3Stars", "AC - 1.5Ton, 3Stars", "AC - 2Ton, 3Stars",                                                           "AC - 1Ton, Inverter", "AC - 1.5Ton, Inverter", "AC - 2Ton, Inverter"
+                                        ],
+           "appliance_wattage"     :    [1200, 1700, 2300, 1100, 1600, 2100]
+    },
+    
+    {
+           "appliance_category"    :   "Others",
+           "appliance_name"        :    ["Surveillance System", "Photo Copier", "Printer/Scanner","Laser Printer (Small)",                                   "Projector"],
+           "appliance_wattage"     :    [100, 2000, 2000, 200, 600]
     }
-
+    
 ]
  
