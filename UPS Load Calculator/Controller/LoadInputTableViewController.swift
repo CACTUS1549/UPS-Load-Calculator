@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoadCalculatorTableViewController: UITableViewController {
+class LoadInputTableViewController: UITableViewController {
     
     let data = DataLoader().applianceData
 

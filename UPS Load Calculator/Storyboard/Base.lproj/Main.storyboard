@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="110.49107142857143"/>
         </scene>
-        <!--Select Appliances-->
+        <!--Input-->
         <scene sceneID="DkR-IH-RNZ">
             <objects>
-                <tableViewController id="VSv-0T-iKV" customClass="LoadCalculatorTableViewController" customModule="Load_on_UPS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="VSv-0T-iKV" customClass="LoadInputTableViewController" customModule="Load_on_UPS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wnM-bk-IJB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,11 +279,33 @@
                             <outlet property="delegate" destination="VSv-0T-iKV" id="bbZ-rL-utN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Select Appliances" id="Vqn-b6-ckV"/>
+                    <navigationItem key="navigationItem" title="Input" id="Vqn-b6-ckV">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="spM-KM-83j">
+                            <connections>
+                                <segue destination="1FJ-pK-iFo" kind="show" id="9Nw-bc-heS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foR-1x-h42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2005.7971014492755" y="109.82142857142857"/>
+        </scene>
+        <!--Output-->
+        <scene sceneID="N2T-HM-9nM">
+            <objects>
+                <viewController id="1FJ-pK-iFo" customClass="OutputViewController" customModule="Load_on_UPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="htS-8k-fHS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="t81-iX-1Zs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Output" id="3Hb-zp-UJl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQN-gR-wtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926" y="110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LMz-VC-idc">
