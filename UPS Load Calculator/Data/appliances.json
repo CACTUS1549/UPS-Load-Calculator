@@ -1,0 +1,32 @@
+[
+    {
+           "appliance_category"    :   "Fans and Cooler",
+           "appliance_name"        :   ["Ceiling Fan", "Table Fan", "Room Cooler"],
+           "appliance_wattage"     :    [75, 50, 250]
+    },
+    
+    {
+           "appliance_category"    :   "Laptops and Computers",
+           "appliance_name"        :   ["Laptop", "Desktop Computer", "Laser Printer (Small)"],
+           "appliance_wattage"     :    [100, 200, 200]
+    },
+    
+    {
+           "appliance_category"    :   "Lights",
+           "appliance_name"        :   ["Tubelight Small", "Tubelight Big", "CFL Light", "CFL Heavy",
+                                        "LED Bulb Big", "LED Bulb Small", "Light Bulb (Incandescent)",
+                                        "Light Bulb (Incandescent)", "Light Bulb (Incandescent)"
+                                        ],
+           "appliance_wattage"     :    [20, 40, 30, 50, 9, 5, 40, 60, 100]
+    },
+    
+    
+    {
+           "appliance_category"    :   "Home Appliances",
+           "appliance_name"        :   ["Juicer Mixer Grinder", "Toaster", "Refrigerator(Upto 200L)",                                   "Refrigerator(Upto 500L)", "Microwave Oven", "Vacuum Cleaner",                                  "Washing Machine", "Geyser/Water Heater", "Room Heater"
+                                        ],
+           "appliance_wattage"     :    [800, 800, 300, 500, 1400, 1400, 1000, 2200, 2200]
+    }
+
+]
+ 

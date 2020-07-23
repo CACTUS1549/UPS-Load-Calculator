@@ -9,10 +9,9 @@
 import UIKit
 
 class LoadCalculatorTableViewController: UITableViewController {
-
-    var appliance: [Appliance] = [Appliance(category: "Fans and Coolers", name: ["Ceiling Fan", "Cooler", "Table Fan"], wattage: [75, 250, 50]),
-    Appliance(category: "Computers and Laptops", name: ["Laptop", "Desktop Computer", "Small Printer"], wattage: [100, 200, 200])]
     
+    let data = DataLoader().applianceData
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
@@ -21,28 +20,27 @@ class LoadCalculatorTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return appliance.count
+        return data.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-        return appliance[section].name.count
+        return data[section].appliance_name.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "accessoryDataCell", for: indexPath) as! AppliancesTableViewCell
-            cell.applianceNameLabel.text = appliance[indexPath.section].name[indexPath.row]
-            cell.accessoryWattage.text = String(appliance[indexPath.section].wattage[indexPath.row])
+        cell.applianceNameLabel.text = data[indexPath.section].appliance_name[indexPath.row]
+        cell.accessoryWattage.text = String(data[indexPath.section].appliance_wattage[indexPath.row])
             return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return appliance[section].category
+        return data[section].appliance_category
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCell(withIdentifier: "accessoryCategoryCell") as! SectionHeadingTableViewCell
-        cell.applianceCategoryHeadinglabel.text = appliance[section].category
+        cell.applianceCategoryHeadinglabel.text = data[section].appliance_category
         return cell
     }
     
